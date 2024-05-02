@@ -1,0 +1,43 @@
+[gd_scene load_steps=8 format=3 uid="uid://on88s5s78yx3"]
+
+[ext_resource type="Script" path="res://GameManager.gd" id="1_75dx8"]
+[ext_resource type="PackedScene" uid="uid://dmngx160pmrk8" path="res://Player.tscn" id="1_elwaj"]
+[ext_resource type="Texture2D" uid="uid://b8f3ouc6ifpmw" path="res://Assets/water_texture__8_bit__by_trarian_dezbqgu.png" id="2_7fln5"]
+[ext_resource type="PackedScene" uid="uid://db6bkoc1ak46f" path="res://coin.tscn" id="4_mwi7p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7wt53"]
+size = Vector2(1201, 59)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iyi8b"]
+size = Vector2(55, 278)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4orwy"]
+size = Vector2(59, 276)
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_75dx8")
+
+[node name="Player" parent="." instance=ExtResource("1_elwaj")]
+position = Vector2(365, 450)
+
+[node name="Bounds" type="StaticBody2D" parent="."]
+
+[node name="Water" type="CollisionShape2D" parent="Bounds"]
+position = Vector2(574.5, 619.5)
+shape = SubResource("RectangleShape2D_7wt53")
+
+[node name="Sprite2D" type="Sprite2D" parent="Bounds/Water"]
+position = Vector2(-1.00002, -15)
+scale = Vector2(2.69556, 0.188889)
+texture = ExtResource("2_7fln5")
+
+[node name="Wall Left" type="CollisionShape2D" parent="Bounds"]
+position = Vector2(17.5, 455)
+shape = SubResource("RectangleShape2D_iyi8b")
+
+[node name="Wall right" type="CollisionShape2D" parent="Bounds"]
+position = Vector2(1146, 463)
+shape = SubResource("RectangleShape2D_4orwy")
+
+[node name="Coin" parent="." instance=ExtResource("4_mwi7p")]
+position = Vector2(415, 262)
