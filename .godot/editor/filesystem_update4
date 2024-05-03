@@ -1,5 +1,4 @@
 res://Game.tscn
 res://Player.tscn
 res://coin.tscn
-res://coin.gd
-res://Player.gd
+res://GameManager.gd

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://on88s5s78yx3"]
+[gd_scene load_steps=9 format=3 uid="uid://on88s5s78yx3"]
 
 [ext_resource type="Script" path="res://GameManager.gd" id="1_75dx8"]
 [ext_resource type="PackedScene" uid="uid://dmngx160pmrk8" path="res://Player.tscn" id="1_elwaj"]
@@ -9,10 +9,13 @@
 size = Vector2(1201, 59)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iyi8b"]
-size = Vector2(55, 278)
+size = Vector2(55, 75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4orwy"]
-size = Vector2(59, 276)
+size = Vector2(59, 70)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3al4j"]
+size = Vector2(37, 429)
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_75dx8")
@@ -32,12 +35,32 @@ scale = Vector2(2.69556, 0.188889)
 texture = ExtResource("2_7fln5")
 
 [node name="Wall Left" type="CollisionShape2D" parent="Bounds"]
-position = Vector2(17.5, 455)
+position = Vector2(17.5, 556.5)
 shape = SubResource("RectangleShape2D_iyi8b")
 
 [node name="Wall right" type="CollisionShape2D" parent="Bounds"]
-position = Vector2(1146, 463)
+position = Vector2(1146, 566)
 shape = SubResource("RectangleShape2D_4orwy")
+
+[node name="ScoreAreaTreasure" type="Area2D" parent="Bounds"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bounds/ScoreAreaTreasure"]
+position = Vector2(1155, 317)
+shape = SubResource("RectangleShape2D_3al4j")
 
 [node name="Coin" parent="." instance=ExtResource("4_mwi7p")]
 position = Vector2(415, 262)
+
+[node name="UI" type="Node2D" parent="."]
+
+[node name="ScoreText" type="Label" parent="UI"]
+offset_left = 964.0
+offset_top = 2.0
+offset_right = 1152.0
+offset_bottom = 44.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Spawners" type="Node2D" parent="."]
+
+[connection signal="body_entered" from="Bounds/ScoreAreaTreasure" to="." method="_on_score_area_treasure_body_entered"]
