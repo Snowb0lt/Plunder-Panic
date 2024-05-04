@@ -19,4 +19,3 @@ func _on_score_area_treasure_body_entered(body):
 	if body.is_in_group("Coin"):
 		score += 100
 		updateScore()
-
