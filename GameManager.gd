@@ -6,7 +6,6 @@ var scoreLabel
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	scoreLabel = $UI/ScoreText
-	print(score)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -21,6 +20,3 @@ func _on_score_area_treasure_body_entered(body):
 		score += 100
 		updateScore()
 
-
-#spawning the gold coins
-var coins = preload("res://coin.tscn")

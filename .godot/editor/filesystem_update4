@@ -1,4 +1,8 @@
 res://Game.tscn
+res://GameManager.gd
 res://Player.tscn
 res://coin.tscn
-res://GameManager.gd
+res://TreasureSpawner.gd
+res://coin.gd
+res://Water.gd
+res://Player.gd

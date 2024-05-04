@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714743141
+::res://::1714831804
 coin.gd::GDScript::-1::1714673169::0::1::::<>Node2D<>::
-coin.tscn::PackedScene::7293525919623263527::1714674766::0::1::::<><>::res://coin.gd<>uid://cdn7e230ouk7v::::res://Assets/Coin.png
-Game.tscn::PackedScene::1011544306321746386::1714674766::0::1::::<><>::res://GameManager.gd<>uid://dmngx160pmrk8::::res://Player.tscn<>uid://b8f3ouc6ifpmw::::res://Assets/water_texture__8_bit__by_trarian_dezbqgu.png<>uid://db6bkoc1ak46f::::res://coin.tscn
-GameManager.gd::GDScript::-1::1714668577::0::1::::<>Node2D<>::
+coin.tscn::PackedScene::7293525919623263527::1714746002::0::1::::<><>::res://coin.gd<>uid://cdn7e230ouk7v::::res://Assets/Coin.png
+Game.tscn::PackedScene::1011544306321746386::1714746001::0::1::::<><>::res://GameManager.gd<>uid://dmngx160pmrk8::::res://Player.tscn<>uid://b8f3ouc6ifpmw::::res://Assets/water_texture__8_bit__by_trarian_dezbqgu.png<>uid://db6bkoc1ak46f::::res://coin.tscn
+GameManager.gd::GDScript::-1::1714745996::0::1::::<>Node2D<>::
 icon.svg::CompressedTexture2D::767188268870214290::1714587527::1714587540::1::::<><>::
 Player.gd::GDScript::-1::1714674765::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::8028771875407343209::1714674782::0::1::::<><>::uid://dxjiuk6ck8h1d::::res://Assets/Pirate Player.png<>res://Player.gd
+Player.tscn::PackedScene::8028771875407343209::1714746001::0::1::::<><>::uid://dxjiuk6ck8h1d::::res://Assets/Pirate Player.png<>res://Player.gd
 PlayerInput.gd::GDScript::-1::1714616947::0::1::::<>CharacterBody2D<>::
 ::res://Assets/::1714672363
 Coin.png::CompressedTexture2D::5012196358587593373::1714672357::1714672363::1::::<><>::

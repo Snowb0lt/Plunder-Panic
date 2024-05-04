@@ -16,11 +16,18 @@ func _physics_process(delta):
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_axis("moveLeft", "moveRight")
-	if direction:
-		velocity.x = direction * SPEED
+	var moveSpeed
+	if Input.is_action_pressed("Accel"):
+		moveSpeed = 600.0
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		moveSpeed = SPEED
+
+	if direction:
+		velocity.x = direction * moveSpeed
+	else:
+		velocity.x = move_toward(velocity.x, 0, moveSpeed)
 	flip_sprite()
+	
 
 func flip_sprite():
 	# Flip Sprite when moving to the left
