@@ -14,19 +14,20 @@ func _physics_process(delta):
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction = Input.get_axis("moveLeft", "moveRight")
-	var moveSpeed
-	if Input.is_action_pressed("Accel"):
-		moveSpeed = SPEED * 2
-	else:
-		moveSpeed = SPEED
+	if !GameManager.isMatchOver:
+		var direction = Input.get_axis("moveLeft", "moveRight")
+		var moveSpeed
+		if Input.is_action_pressed("Accel"):
+			moveSpeed = SPEED * 2
+		else:
+			moveSpeed = SPEED
 
-	if direction:
-		velocity.x = direction * moveSpeed
-	else:
-		velocity.x = move_toward(velocity.x, 0, moveSpeed)
-	flip_sprite()
-	
+		if direction:
+			velocity.x = direction * moveSpeed
+		else:
+			velocity.x = move_toward(velocity.x, 0, moveSpeed)
+		flip_sprite()
+
 
 func flip_sprite():
 	# Flip Sprite when moving to the left
@@ -37,11 +38,11 @@ func flip_sprite():
 
 	move_and_slide()
 
-
-func _on_catch_area_area_entered(area):
-	if area.is_in_group("Coin"):
-		print("Coin")
-		
 func _on_catch_area_body_entered(body):
 	if body.is_in_group("Coin"):
 		body.apply_central_impulse(Vector2(200,-1500))
+	if body.is_in_group("Bomb"):
+		#end the run
+		$Sprite2D.texture = ResourceLoader.load("res://Assets/Pirate Player Exploded.png")
+		GameManager.isMatchOver = true;
+		print("The Round is over.")

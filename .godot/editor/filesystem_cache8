@@ -1,15 +1,22 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714831804
-coin.gd::GDScript::-1::1714673169::0::1::::<>Node2D<>::
-coin.tscn::PackedScene::7293525919623263527::1714746002::0::1::::<><>::res://coin.gd<>uid://cdn7e230ouk7v::::res://Assets/Coin.png
-Game.tscn::PackedScene::1011544306321746386::1714746001::0::1::::<><>::res://GameManager.gd<>uid://dmngx160pmrk8::::res://Player.tscn<>uid://b8f3ouc6ifpmw::::res://Assets/water_texture__8_bit__by_trarian_dezbqgu.png<>uid://db6bkoc1ak46f::::res://coin.tscn
-GameManager.gd::GDScript::-1::1714745996::0::1::::<>Node2D<>::
+::res://::1715100724
+bomb.tscn::PackedScene::1720685972299474778::1715100724::0::1::::<><>::res://Scripts/bomb.gd<>uid://cbrm211l52gse::::res://Assets/Bomb.png
+coin.tscn::PackedScene::7293525919623263527::1715100724::0::1::::<><>::res://Scripts/coin.gd<>uid://cdn7e230ouk7v::::res://Assets/Coin.png
+Game.tscn::PackedScene::1011544306321746386::1715100738::0::1::::<><>::res://GameManager.gd<>uid://dmngx160pmrk8::::res://Player.tscn<>uid://b8f3ouc6ifpmw::::res://Assets/water_texture__8_bit__by_trarian_dezbqgu.png<>res://Scripts/Water.gd<>res://Scripts/SpawnerManager.gd
+GameManager.gd::GDScript::-1::1715099861::0::1::::<>Node2D<>::
 icon.svg::CompressedTexture2D::767188268870214290::1714587527::1714587540::1::::<><>::
-Player.gd::GDScript::-1::1714674765::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::8028771875407343209::1714746001::0::1::::<><>::uid://dxjiuk6ck8h1d::::res://Assets/Pirate Player.png<>res://Player.gd
-PlayerInput.gd::GDScript::-1::1714616947::0::1::::<>CharacterBody2D<>::
-::res://Assets/::1714672363
+Player.tscn::PackedScene::8028771875407343209::1715100724::0::1::::<><>::uid://dxjiuk6ck8h1d::::res://Assets/Pirate Player.png<>res://Scripts/Player.gd
+::res://Assets/::1715098662
+Bomb-Sheet.png::CompressedTexture2D::3979269806081357249::1715093208::1715093210::1::::<><>::
+Bomb.png::CompressedTexture2D::4878902859504847512::1715095496::1715095496::1::::<><>::
 Coin.png::CompressedTexture2D::5012196358587593373::1714672357::1714672363::1::::<><>::
+Pirate Player Exploded.png::CompressedTexture2D::1081066255310186541::1715098662::1715098662::1::::<><>::
 Pirate Player.png::CompressedTexture2D::8792706879588794171::1714615701::1714615698::1::::<><>::
 water_texture__8_bit__by_trarian_dezbqgu.png::CompressedTexture2D::4714700544406612978::1714654253::1714654256::1::::<><>::
-::res://Scripts/::1714672363
+::res://Scripts/::1715100724
+bomb.gd::GDScript::-1::1715096573::0::1::::<>Node2D<>::
+coin.gd::GDScript::-1::1715091300::0::1::::<>Node2D<>::
+Player.gd::GDScript::-1::1715099887::0::1::::<>CharacterBody2D<>::
+PlayerInput.gd::GDScript::-1::1714616947::0::1::::<>CharacterBody2D<>::
+SpawnerManager.gd::GDScript::-1::1715100674::0::1::::<>Node2D<>::
+Water.gd::GDScript::-1::1715094020::0::1::::<>CollisionShape2D<>::

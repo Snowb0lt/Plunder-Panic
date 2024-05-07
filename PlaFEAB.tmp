@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dmngx160pmrk8"]
 
 [ext_resource type="Texture2D" uid="uid://dxjiuk6ck8h1d" path="res://Assets/Pirate Player.png" id="1_2hhuh"]
-[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_7uobt"]
+[ext_resource type="Script" path="res://Player.gd" id="1_7uobt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w25c6"]
 size = Vector2(119, 17.25)

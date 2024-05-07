@@ -1,10 +1,10 @@
 [gd_scene load_steps=11 format=3 uid="uid://on88s5s78yx3"]
 
-[ext_resource type="Script" path="res://GameManager.gd" id="1_75dx8"]
+[ext_resource type="Script" path="res://Scripts/GameManager.gd" id="1_75dx8"]
 [ext_resource type="PackedScene" uid="uid://dmngx160pmrk8" path="res://Player.tscn" id="1_elwaj"]
 [ext_resource type="Texture2D" uid="uid://b8f3ouc6ifpmw" path="res://Assets/water_texture__8_bit__by_trarian_dezbqgu.png" id="2_7fln5"]
-[ext_resource type="Script" path="res://Water.gd" id="3_qtoy8"]
-[ext_resource type="Script" path="res://TreasureSpawner.gd" id="5_exd2w"]
+[ext_resource type="Script" path="res://Scripts/Water.gd" id="3_qtoy8"]
+[ext_resource type="Script" path="res://Scripts/SpawnerManager.gd" id="5_vwgxj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7wt53"]
 size = Vector2(1201, 59)
@@ -70,15 +70,23 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Spawners" type="Node2D" parent="."]
+script = ExtResource("5_vwgxj")
 
 [node name="Treasure" type="Node2D" parent="Spawners"]
 position = Vector2(-16, 220)
-script = ExtResource("5_exd2w")
 
-[node name="Timer" type="Timer" parent="Spawners/Treasure"]
+[node name="Treasure Timer" type="Timer" parent="Spawners/Treasure"]
 wait_time = 1.5
+
+[node name="Bomb" type="Node2D" parent="Spawners"]
+
+[node name="Bomb Timer" type="Timer" parent="Spawners/Bomb"]
+wait_time = 6.0
 autostart = true
 
 [connection signal="body_entered" from="Bounds/Water/Area2D" to="Bounds/Water" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Bounds/ScoreAreaTreasure" to="." method="_on_score_area_treasure_body_entered"]
-[connection signal="timeout" from="Spawners/Treasure/Timer" to="Spawners/Treasure" method="_on_timer_timeout"]
+[connection signal="timeout" from="Spawners/Treasure/Treasure Timer" to="Spawners" method="_on_treasure_timer_timeout"]
+[connection signal="timeout" from="Spawners/Treasure/Treasure Timer" to="Spawners/Treasure" method="_on_timer_timeout"]
+[connection signal="timeout" from="Spawners/Bomb/Bomb Timer" to="Spawners" method="_on_bomb_timer_timeout"]
+[connection signal="timeout" from="Spawners/Bomb/Bomb Timer" to="Spawners/Bomb" method="_on_timer_timeout"]

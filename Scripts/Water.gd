@@ -16,7 +16,7 @@ func _on_area_2d_body_entered(body):
 		body.queue_free()
 	#Lose a crew if supplies falls
 	if body.is_in_group("Supplies"):
-		pass
+		body.queue_free()
 	#Lose the game if bomb is dropped
 	if body.is_in_group("Bomb"):
-		pass
+		body.queue_free()
