@@ -24,3 +24,8 @@ func _on_score_area_treasure_body_entered(body):
 		updateScore()
 	if body.is_in_group("Bomb"):
 		pass
+
+func StopGame():
+	$Spawners.StopTimers()
+	if !isMatchOver:
+		isMatchOver

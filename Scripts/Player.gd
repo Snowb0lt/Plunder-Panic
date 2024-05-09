@@ -14,7 +14,7 @@ func _physics_process(delta):
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	if !GameManager.isMatchOver:
+	if !$"..".isMatchOver:
 		var direction = Input.get_axis("moveLeft", "moveRight")
 		var moveSpeed
 		if Input.is_action_pressed("Accel"):
@@ -44,5 +44,7 @@ func _on_catch_area_body_entered(body):
 	if body.is_in_group("Bomb"):
 		#end the run
 		$Sprite2D.texture = ResourceLoader.load("res://Assets/Pirate Player Exploded.png")
-		GameManager.isMatchOver = true;
+		$"..".isMatchOver = true;
+		body.queue_free
 		print("The Round is over.")
+

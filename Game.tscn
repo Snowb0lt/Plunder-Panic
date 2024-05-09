@@ -70,23 +70,18 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Spawners" type="Node2D" parent="."]
+position = Vector2(-86, 252)
 script = ExtResource("5_vwgxj")
 
-[node name="Treasure" type="Node2D" parent="Spawners"]
-position = Vector2(-16, 220)
-
-[node name="Treasure Timer" type="Timer" parent="Spawners/Treasure"]
+[node name="Treasure Timer" type="Timer" parent="Spawners"]
 wait_time = 1.5
+autostart = true
 
-[node name="Bomb" type="Node2D" parent="Spawners"]
-
-[node name="Bomb Timer" type="Timer" parent="Spawners/Bomb"]
+[node name="Bomb Timer" type="Timer" parent="Spawners"]
 wait_time = 6.0
 autostart = true
 
 [connection signal="body_entered" from="Bounds/Water/Area2D" to="Bounds/Water" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Bounds/ScoreAreaTreasure" to="." method="_on_score_area_treasure_body_entered"]
-[connection signal="timeout" from="Spawners/Treasure/Treasure Timer" to="Spawners" method="_on_treasure_timer_timeout"]
-[connection signal="timeout" from="Spawners/Treasure/Treasure Timer" to="Spawners/Treasure" method="_on_timer_timeout"]
-[connection signal="timeout" from="Spawners/Bomb/Bomb Timer" to="Spawners" method="_on_bomb_timer_timeout"]
-[connection signal="timeout" from="Spawners/Bomb/Bomb Timer" to="Spawners/Bomb" method="_on_timer_timeout"]
+[connection signal="timeout" from="Spawners/Treasure Timer" to="Spawners" method="_on_treasure_timer_timeout"]
+[connection signal="timeout" from="Spawners/Bomb Timer" to="Spawners" method="_on_bomb_timer_timeout"]

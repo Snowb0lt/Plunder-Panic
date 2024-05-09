@@ -1,11 +1,6 @@
 res://Game.tscn
+res://Scripts/GameManager.gd
+res://Scripts/Water.gd
 res://Player.tscn
 res://coin.tscn
-res://coin.gd
-res://Player.gd
 res://bomb.tscn
-res://bomb.gd
-res://GameManager.gd
-res://Water.gd
-res://BombSpawner.gd
-res://SpawnerManager.gd
