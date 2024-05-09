@@ -25,6 +25,16 @@ func _on_score_area_treasure_body_entered(body):
 	if body.is_in_group("Bomb"):
 		pass
 
+#Checks to see how many crew are remaining
+var crew_left = 5
+func crew_check():
+	if crew_left == 0:
+		StopGame()
+	else:
+		pass
+
+
+#Stops the game
 func StopGame():
 	$Spawners.StopTimers()
 	if !isMatchOver:

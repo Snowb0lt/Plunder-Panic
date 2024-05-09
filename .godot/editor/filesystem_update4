@@ -4,3 +4,5 @@ res://Scripts/Water.gd
 res://Player.tscn
 res://coin.tscn
 res://bomb.tscn
+res://Scripts/SpawnerManager.gd
+res://Scripts/Player.gd

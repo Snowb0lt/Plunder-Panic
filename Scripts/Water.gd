@@ -20,4 +20,3 @@ func _on_area_2d_body_entered(body):
 	#Lose the game if bomb is dropped
 	if body.is_in_group("Bomb"):
 		body.queue_free()
-		$"../..".StopGame()

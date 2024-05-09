@@ -46,5 +46,6 @@ func _on_catch_area_body_entered(body):
 		$Sprite2D.texture = ResourceLoader.load("res://Assets/Pirate Player Exploded.png")
 		$"..".isMatchOver = true;
 		body.queue_free
+		$"..".StopGame()
 		print("The Round is over.")
 

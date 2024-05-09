@@ -4,6 +4,8 @@ extends Node2D
 #@onready var treasure_timer = $"Treasure Timer"
 #@onready var bomb_timer = %"Bomb Timer"
 
+@onready var TresThisRound = 0
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
@@ -31,6 +33,8 @@ func spawnBomb():
 
 func _on_treasure_timer_timeout(): 
 	spawnTreasure()
+	TresThisRound += 1
+	print(TresThisRound)
 
 
 func _on_bomb_timer_timeout():
