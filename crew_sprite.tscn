@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cn2svdl6q647v"]
+
+[ext_resource type="Texture2D" uid="uid://cbpu38et7d2pq" path="res://Assets/Crew-Sprite-Sheet.png" id="1_ir126"]
+
+[node name="Crew Sprite" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 28.0
+offset_bottom = 65.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(14, 32)
+texture = ExtResource("1_ir126")
+hframes = 2

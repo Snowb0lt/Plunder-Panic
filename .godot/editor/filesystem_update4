@@ -1,8 +1,8 @@
 res://Game.tscn
 res://Scripts/GameManager.gd
-res://Scripts/Water.gd
 res://Player.tscn
 res://coin.tscn
 res://bomb.tscn
-res://Scripts/SpawnerManager.gd
-res://Scripts/Player.gd
+res://LiveManager.gd
+res://crew_sprite.tscn
+res://Scripts/Water.gd

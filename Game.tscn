@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://on88s5s78yx3"]
+[gd_scene load_steps=12 format=3 uid="uid://on88s5s78yx3"]
 
 [ext_resource type="Script" path="res://Scripts/GameManager.gd" id="1_75dx8"]
 [ext_resource type="PackedScene" uid="uid://dmngx160pmrk8" path="res://Player.tscn" id="1_elwaj"]
 [ext_resource type="Texture2D" uid="uid://b8f3ouc6ifpmw" path="res://Assets/water_texture__8_bit__by_trarian_dezbqgu.png" id="2_7fln5"]
 [ext_resource type="Script" path="res://Scripts/Water.gd" id="3_qtoy8"]
+[ext_resource type="PackedScene" uid="uid://cn2svdl6q647v" path="res://crew_sprite.tscn" id="5_l8cp4"]
 [ext_resource type="Script" path="res://Scripts/SpawnerManager.gd" id="5_vwgxj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7wt53"]
@@ -69,24 +70,39 @@ offset_bottom = 44.0
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ItemList" type="ItemList" parent="UI"]
-offset_right = 159.0
-offset_bottom = 73.0
-size_flags_horizontal = 3
+[node name="Crew Container" type="HBoxContainer" parent="UI"]
+offset_right = 234.0
+offset_bottom = 68.0
+theme_override_constants/separation = 30
 
-[node name="Spawners" type="Node2D" parent="."]
+[node name="Crew Sprite" parent="UI/Crew Container" instance=ExtResource("5_l8cp4")]
+layout_mode = 2
+
+[node name="Crew Sprite2" parent="UI/Crew Container" instance=ExtResource("5_l8cp4")]
+layout_mode = 2
+
+[node name="Crew Sprite3" parent="UI/Crew Container" instance=ExtResource("5_l8cp4")]
+layout_mode = 2
+
+[node name="Crew Sprite4" parent="UI/Crew Container" instance=ExtResource("5_l8cp4")]
+layout_mode = 2
+
+[node name="Crew Sprite5" parent="UI/Crew Container" instance=ExtResource("5_l8cp4")]
+layout_mode = 2
+
+[node name="Spawners (Boarded Ship)" type="Node2D" parent="."]
 position = Vector2(-86, 252)
 script = ExtResource("5_vwgxj")
 
-[node name="Treasure Timer" type="Timer" parent="Spawners"]
+[node name="Treasure Timer" type="Timer" parent="Spawners (Boarded Ship)"]
 wait_time = 1.5
 autostart = true
 
-[node name="Bomb Timer" type="Timer" parent="Spawners"]
+[node name="Bomb Timer" type="Timer" parent="Spawners (Boarded Ship)"]
 wait_time = 6.0
 autostart = true
 
 [connection signal="body_entered" from="Bounds/Water/Area2D" to="Bounds/Water" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Bounds/ScoreAreaTreasure" to="." method="_on_score_area_treasure_body_entered"]
-[connection signal="timeout" from="Spawners/Treasure Timer" to="Spawners" method="_on_treasure_timer_timeout"]
-[connection signal="timeout" from="Spawners/Bomb Timer" to="Spawners" method="_on_bomb_timer_timeout"]
+[connection signal="timeout" from="Spawners (Boarded Ship)/Treasure Timer" to="Spawners (Boarded Ship)" method="_on_treasure_timer_timeout"]
+[connection signal="timeout" from="Spawners (Boarded Ship)/Bomb Timer" to="Spawners (Boarded Ship)" method="_on_bomb_timer_timeout"]

@@ -2,7 +2,7 @@ extends Node2D
 
 var score = 0
 var scoreLabel
-
+var lives = 5
 #check if match is over
 var isMatchOver = false
 
@@ -33,6 +33,13 @@ func crew_check():
 	else:
 		pass
 
+@onready var sailor_sprites = $"UI/Crew Container"
+var livesArray = [$"UI/Crew Container/Crew Sprite/Sprite2D",$"UI/Crew Container/Crew Sprite2/Sprite2D",$"UI/Crew Container/Crew Sprite3/Sprite2D",$"UI/Crew Container/Crew Sprite4/Sprite2D",$"UI/Crew Container/Crew Sprite5/Sprite2D"]
+#Takes away a sailor
+func killCrew():
+	livesArray[lives-1].set_frame(1)
+	lives -= 1
+	
 
 #Stops the game
 func StopGame():
