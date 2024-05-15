@@ -82,8 +82,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Crew Container" type="HBoxContainer" parent="UI"]
-offset_right = 234.0
-offset_bottom = 68.0
+offset_left = 51.0
+offset_top = 13.0
+offset_right = 285.0
+offset_bottom = 81.0
 theme_override_constants/separation = 30
 
 [node name="Crew Sprite" parent="UI/Crew Container" instance=ExtResource("5_l8cp4")]
