@@ -8,6 +8,7 @@ func _ready():
 	var randomY = randi_range(-300, -700)
 	var body = $RigidBody2D
 	body.apply_central_impulse(Vector2(randomX, randomY))
+	body.apply_torque(-200000)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

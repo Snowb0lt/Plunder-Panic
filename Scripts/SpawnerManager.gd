@@ -47,6 +47,7 @@ func _on_treasure_timer_timeout():
 
 func _on_bomb_timer_timeout():
 	spawnBomb(enemyShip.position)
+	$"../Sounds/Cannon".play()
 	
 #func stopSpawning():
 	#treasure_timer.stop()

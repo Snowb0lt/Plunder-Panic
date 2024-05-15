@@ -22,10 +22,12 @@ func updateScore():
 func _on_score_area_treasure_body_entered(body):
 	if body.is_in_group("Coin"):
 		score += 100
+		$Sounds/Coin.play()
 		updateScore()
 
 func _on_score_area_supplies_body_entered(body):
 	if body.is_in_group("Supplies"):
+		$Sounds/Healed.play()
 		body.queue_free()
 
 #Checks to see how many crew are remaining

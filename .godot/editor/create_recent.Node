@@ -1,6 +1,7 @@
+AudioStreamPlayer2D
+Node2D
 CollisionShape2D
 RigidBody2D
-Node2D
 Timer
 Sprite2D
 Panel
