@@ -39,7 +39,7 @@ func flip_sprite():
 	move_and_slide()
 
 func _on_catch_area_body_entered(body):
-	if body.is_in_group("Coin"):
+	if body.is_in_group("Treasure"):
 		body.apply_central_impulse(Vector2(200,-1500))
 	if body.is_in_group("Supplies"):
 		body.apply_central_impulse(Vector2(-200,-1500))

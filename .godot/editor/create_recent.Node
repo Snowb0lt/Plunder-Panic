@@ -1,9 +1,9 @@
-AudioStreamPlayer2D
-Node2D
+Sprite2D
 CollisionShape2D
 RigidBody2D
+AudioStreamPlayer2D
+Node2D
 Timer
-Sprite2D
 Panel
 HBoxContainer
 ItemList
@@ -12,4 +12,3 @@ AnimationPlayer
 AnimatedSprite2D
 Area2D
 Label
-TextEdit

@@ -9,3 +9,7 @@ res://health_barrel.tscn
 res://Scripts/SpawnerManager.gd
 res://Scripts/Player.gd
 res://Scripts/bomb.gd
+res://Noble.tscn
+res://Noble.gd
+res://Scripts/Treasure_Chest.gd
+res://treasure_chest.tscn

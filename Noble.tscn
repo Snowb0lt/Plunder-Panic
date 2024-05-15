@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://dgnopv7a4f3h7"]
+
+[ext_resource type="Script" path="res://Scripts/Noble.gd" id="1_tldpk"]
+[ext_resource type="Texture2D" uid="uid://cw72gifbkynbc" path="res://Assets/Nobleman.png" id="2_0xo2u"]
+[ext_resource type="AudioStream" uid="uid://duws26fvp8riy" path="res://Assets/Sounds/Unhand me.mp3" id="3_k2i1t"]
+[ext_resource type="AudioStream" uid="uid://cqmphpwl3ui3c" path="res://Assets/Sounds/Noblewoman Scream.wav" id="4_u3ajd"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yumn0"]
+radius = 18.8206
+height = 47.2359
+
+[node name="Noble" type="Node2D"]
+scale = Vector2(2.7098, 2.7098)
+script = ExtResource("1_tldpk")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." groups=["Nobility", "Treasure"]]
+collision_mask = 16
+
+[node name="MainSprite" type="Sprite2D" parent="RigidBody2D"]
+scale = Vector2(2.98425, 2.98425)
+texture = ExtResource("2_0xo2u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("CapsuleShape2D_yumn0")
+
+[node name="ScreamMale" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_k2i1t")
+
+[node name="ScreamFemale" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_u3ajd")

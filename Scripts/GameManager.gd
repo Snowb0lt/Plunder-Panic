@@ -20,10 +20,21 @@ func updateScore():
 
 #Handles the walls and collection of treasure and supplies
 func _on_score_area_treasure_body_entered(body):
-	if body.is_in_group("Coin"):
-		score += 100
-		$Sounds/Coin.play()
+#If it's a coin
+	if body.is_in_group("Treasure"):
+		if body.is_in_group("Coin"):
+			score += 100
+			$Sounds/Coin.play()
+		if body.is_in_group("Chest"):
+			score += 500
+			$"Sounds/Chest Spill".play()
+
+		if body.is_in_group("Nobility"):
+			score += 1000
+
+
 		updateScore()
+		body.queue_free()
 
 func _on_score_area_supplies_body_entered(body):
 	if body.is_in_group("Supplies"):

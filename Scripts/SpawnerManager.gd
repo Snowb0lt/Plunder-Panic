@@ -18,12 +18,6 @@ func _process(delta):
 #Spawner management
 @onready var enemyShip = get_node("Spawners (Boarded Ship)")
 @onready var friendlyShip = get_node("Spawner (Friendly Ship)")
-#For Treasure
-var coins = preload("res://coin.tscn")
-func spawnTreasure(pos):
-	var obj =  coins.instantiate()
-	obj.position = pos
-	add_child(obj)
 
 #For Bomb
 var bomb = preload("res://bomb.tscn")
@@ -39,10 +33,27 @@ func spawnHealth(pos):
 	obj.position = pos
 	add_child(obj)
 
+#For Treasure
+var coins = preload("res://coin.tscn")
+var noble = preload("res://Noble.tscn")
+var chest = preload("res://treasure_chest.tscn")
+@onready var treasureArray = [coins, noble, chest]
+func spawnTreasure(pos, object):
+	var obj =  object.instantiate()
+	obj.position = pos
+	add_child(obj)
+
 func _on_treasure_timer_timeout(): 
-	spawnTreasure(enemyShip.position)
+	var randomSelection = randi_range(0,100)
+	if (randomSelection >=0 && randomSelection < 70):
+		spawnTreasure(enemyShip.position, coins)
+	if (randomSelection >= 71 && randomSelection < 80):
+		spawnTreasure(enemyShip.position, noble)
+	if (randomSelection >= 81 && randomSelection <= 100):
+		spawnTreasure(enemyShip.position, chest)
+	else:
+		pass
 	TresThisRound += 1
-	print(TresThisRound)
 
 
 func _on_bomb_timer_timeout():
