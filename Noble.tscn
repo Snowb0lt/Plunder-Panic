@@ -6,8 +6,8 @@
 [ext_resource type="AudioStream" uid="uid://cqmphpwl3ui3c" path="res://Assets/Sounds/Noblewoman Scream.wav" id="4_u3ajd"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yumn0"]
-radius = 18.8206
-height = 47.2359
+radius = 24.7251
+height = 64.9494
 
 [node name="Noble" type="Node2D"]
 scale = Vector2(2.7098, 2.7098)
@@ -17,7 +17,7 @@ script = ExtResource("1_tldpk")
 collision_mask = 16
 
 [node name="MainSprite" type="Sprite2D" parent="RigidBody2D"]
-scale = Vector2(2.98425, 2.98425)
+scale = Vector2(4, 4)
 texture = ExtResource("2_0xo2u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
