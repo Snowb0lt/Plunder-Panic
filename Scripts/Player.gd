@@ -41,11 +41,12 @@ func flip_sprite():
 func _on_catch_area_body_entered(body):
 	if body.is_in_group("Coin"):
 		body.apply_central_impulse(Vector2(200,-1500))
+	if body.is_in_group("Supplies"):
+		body.apply_central_impulse(Vector2(-200,-1500))
 	if body.is_in_group("Bomb"):
 		#end the run
+		body.queue_free()
 		$Sprite2D.texture = ResourceLoader.load("res://Assets/Pirate Player Exploded.png")
-		$"..".isMatchOver = true;
 		body.queue_free
 		$"..".StopGame()
-		print("The Round is over.")
 

@@ -15,35 +15,48 @@ func _ready():
 func _process(delta):
 	pass
 
-
+#Spawner management
+@onready var enemyShip = get_node("Spawners (Boarded Ship)")
+@onready var friendlyShip = get_node("Spawner (Friendly Ship)")
 #For Treasure
 var coins = preload("res://coin.tscn")
-func spawnTreasure():
+func spawnTreasure(pos):
 	var obj =  coins.instantiate()
+	obj.position = pos
 	add_child(obj)
 
 #For Bomb
 var bomb = preload("res://bomb.tscn")
-func spawnBomb():
+func spawnBomb(pos):
 	var obj =  bomb.instantiate()
+	obj.position = pos
 	add_child(obj)
 
 #For Supplies
-
+var healthBarrel = preload("res://health_barrel.tscn")
+func spawnHealth(pos):
+	var obj = healthBarrel.instantiate()
+	obj.position = pos
+	add_child(obj)
 
 func _on_treasure_timer_timeout(): 
-	spawnTreasure()
+	spawnTreasure(enemyShip.position)
 	TresThisRound += 1
 	print(TresThisRound)
 
 
 func _on_bomb_timer_timeout():
-	spawnBomb()
+	spawnBomb(enemyShip.position)
 	
 #func stopSpawning():
 	#treasure_timer.stop()
 	#bomb_timer.stop()
 
 func StopTimers():
-	$"Treasure Timer".stop()
-	$"Bomb Timer".stop()
+	$"Spawners (Boarded Ship)/Treasure Timer".stop()
+	$"Spawners (Boarded Ship)/Bomb Timer".stop()
+	$"Spawner (Friendly Ship)/Supply Timer".stop()
+
+
+func _on_supply_timer_timeout():
+	spawnHealth(friendlyShip.position)

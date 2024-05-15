@@ -18,31 +18,38 @@ func _process(delta):
 func updateScore():
 	scoreLabel.text = "Score: " + str(score)
 
+#Handles the walls and collection of treasure and supplies
 func _on_score_area_treasure_body_entered(body):
 	if body.is_in_group("Coin"):
 		score += 100
 		updateScore()
-	if body.is_in_group("Bomb"):
-		pass
+
+func _on_score_area_supplies_body_entered(body):
+	if body.is_in_group("Supplies"):
+		body.queue_free()
 
 #Checks to see how many crew are remaining
-var crew_left = 5
+@onready var crew_left = 5
 func crew_check():
+	print(crew_left)
 	if crew_left == 0:
 		StopGame()
 	else:
 		pass
 
 @onready var sailor_sprites = $"UI/Crew Container"
-var livesArray = [$"UI/Crew Container/Crew Sprite/Sprite2D",$"UI/Crew Container/Crew Sprite2/Sprite2D",$"UI/Crew Container/Crew Sprite3/Sprite2D",$"UI/Crew Container/Crew Sprite4/Sprite2D",$"UI/Crew Container/Crew Sprite5/Sprite2D"]
+@onready var livesArray = [$"UI/Crew Container/Crew Sprite/Sprite2D",$"UI/Crew Container/Crew Sprite2/Sprite2D",$"UI/Crew Container/Crew Sprite3/Sprite2D",$"UI/Crew Container/Crew Sprite4/Sprite2D",$"UI/Crew Container/Crew Sprite5/Sprite2D"]
 #Takes away a sailor
 func killCrew():
-	livesArray[lives-1].set_frame(1)
-	lives -= 1
-	
+	livesArray[crew_left-1].set_frame(1)
+	crew_left -= 1
+	crew_check()
 
 #Stops the game
 func StopGame():
+	print("The Game Is Over")
 	$Spawners.StopTimers()
-	if !isMatchOver:
-		isMatchOver
+	isMatchOver = true
+
+
+

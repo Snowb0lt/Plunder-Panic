@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bq7w8expe5n2c"]
+
+[ext_resource type="Script" path="res://Supplies.gd" id="1_105hj"]
+[ext_resource type="Texture2D" uid="uid://cr53toixqtoiu" path="res://Assets/Health Barrel.png" id="2_ab5c4"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cvgf8"]
+radius = 25.0
+height = 62.0
+
+[node name="Health Barrel" type="Node2D"]
+scale = Vector2(0.0138705, 0.0138238)
+script = ExtResource("1_105hj")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." groups=["Supplies"]]
+collision_mask = 8
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+texture = ExtResource("2_ab5c4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("CapsuleShape2D_cvgf8")

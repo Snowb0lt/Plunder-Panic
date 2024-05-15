@@ -1,13 +1,13 @@
+CollisionShape2D
+RigidBody2D
+Node2D
+Timer
 Sprite2D
 Panel
 HBoxContainer
 ItemList
 CanvasLayer
-CollisionShape2D
-RigidBody2D
 AnimationPlayer
-Timer
-Node2D
 AnimatedSprite2D
 Area2D
 Label

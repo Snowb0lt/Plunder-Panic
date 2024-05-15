@@ -1,8 +1,10 @@
-res://Game.tscn
 res://Scripts/GameManager.gd
+res://Supplies.gd
+res://Game.tscn
 res://Player.tscn
 res://coin.tscn
 res://bomb.tscn
-res://LiveManager.gd
 res://crew_sprite.tscn
-res://Scripts/Water.gd
+res://health_barrel.tscn
+res://Scripts/SpawnerManager.gd
+res://Scripts/Player.gd

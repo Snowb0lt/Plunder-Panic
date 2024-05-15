@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715723503
-bomb.tscn::PackedScene::1720685972299474778::1715722319::0::1::::<><>::res://Scripts/bomb.gd<>uid://cbrm211l52gse::::res://Assets/Bomb.png
-coin.tscn::PackedScene::7293525919623263527::1715722319::0::1::::<><>::res://Scripts/coin.gd<>uid://cdn7e230ouk7v::::res://Assets/Coin.png
-Game.tscn::PackedScene::1011544306321746386::1715722961::0::1::::<><>::res://Scripts/GameManager.gd<>uid://dmngx160pmrk8::::res://Player.tscn<>uid://b8f3ouc6ifpmw::::res://Assets/water_texture__8_bit__by_trarian_dezbqgu.png<>res://Scripts/Water.gd<>uid://kub2y71sjfd6::::res://Assets/Crew Sprite Edit.png<>res://Scripts/SpawnerManager.gd
+::res://::1715784709
+bomb.tscn::PackedScene::1720685972299474778::1715727431::0::1::::<><>::res://Scripts/bomb.gd<>uid://cbrm211l52gse::::res://Assets/Bomb.png
+coin.tscn::PackedScene::7293525919623263527::1715727431::0::1::::<><>::res://Scripts/coin.gd<>uid://cdn7e230ouk7v::::res://Assets/Coin.png
+crew_sprite.tscn::PackedScene::5742165117576067809::1715727432::0::1::::<><>::uid://cbpu38et7d2pq::::res://Assets/Crew-Sprite-Sheet.png
+Game.tscn::PackedScene::1011544306321746386::1715727431::0::1::::<><>::res://Scripts/GameManager.gd<>uid://dmngx160pmrk8::::res://Player.tscn<>uid://b8f3ouc6ifpmw::::res://Assets/water_texture__8_bit__by_trarian_dezbqgu.png<>res://Scripts/Water.gd<>uid://cn2svdl6q647v::::res://crew_sprite.tscn<>res://Scripts/SpawnerManager.gd
 icon.svg::CompressedTexture2D::767188268870214290::1714587527::1714587540::1::::<><>::
-Player.tscn::PackedScene::8028771875407343209::1715722319::0::1::::<><>::uid://dxjiuk6ck8h1d::::res://Assets/Pirate Player.png<>res://Scripts/Player.gd
-crew_sprite.tscn::PackedScene::5742165117576067809::1715723503::0::1::::<><>::uid://kub2y71sjfd6::::res://Assets/Crew Sprite Edit.png
-::res://Assets/::1715723651
+Player.tscn::PackedScene::8028771875407343209::1715727431::0::1::::<><>::uid://dxjiuk6ck8h1d::::res://Assets/Pirate Player.png<>res://Scripts/Player.gd
+::res://Assets/::1715784709
 Bomb-Sheet.png::CompressedTexture2D::3979269806081357249::1715093208::1715093210::1::::<><>::
 Bomb.png::CompressedTexture2D::4878902859504847512::1715095496::1715095496::1::::<><>::
 Coin.png::CompressedTexture2D::5012196358587593373::1714672357::1714672363::1::::<><>::
@@ -14,14 +14,15 @@ crew dead.png::CompressedTexture2D::5242577695738552767::1715721671::1715721671:
 Crew Spriet.png::CompressedTexture2D::5423593399368528706::1715721671::1715721671::1::::<><>::
 Crew Sprite Edit.png::CompressedTexture2D::743286236089597505::1715721998::1715721999::1::::<><>::
 Crew-Sprite-Sheet.png::CompressedTexture2D::4875261959775755378::1715723651::1715723651::1::::<><>::
+Health Barrel.png::CompressedTexture2D::6029717796488696660::1715784522::1715784709::1::::<><>::
 Pirate Player Exploded.png::CompressedTexture2D::1081066255310186541::1715098662::1715098662::1::::<><>::
 Pirate Player.png::CompressedTexture2D::8792706879588794171::1714615701::1714615698::1::::<><>::
 water_texture__8_bit__by_trarian_dezbqgu.png::CompressedTexture2D::4714700544406612978::1714654253::1714654256::1::::<><>::
-::res://Scripts/::1715722961
+::res://Scripts/::1715727418
 bomb.gd::GDScript::-1::1715096573::0::1::::<>Node2D<>::
 coin.gd::GDScript::-1::1715091300::0::1::::<>Node2D<>::
-GameManager.gd::GDScript::-1::1715722961::0::1::::<>Node2D<>::
+GameManager.gd::GDScript::-1::1715727282::0::1::::<>Node2D<>::
 Player.gd::GDScript::-1::1715276671::0::1::::<>CharacterBody2D<>::
 PlayerInput.gd::GDScript::-1::1714616947::0::1::::<>CharacterBody2D<>::
 SpawnerManager.gd::GDScript::-1::1715276584::0::1::::<>Node2D<>::
-Water.gd::GDScript::-1::1715276623::0::1::::<>CollisionShape2D<>::
+Water.gd::GDScript::-1::1715727418::0::1::::<>CollisionShape2D<>::
