@@ -1,15 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715824679
-bomb.tscn::PackedScene::1720685972299474778::1715810866::0::1::::<><>::res://Scripts/bomb.gd<>uid://cbrm211l52gse::::res://Assets/Bomb.png
-coin.tscn::PackedScene::7293525919623263527::1715810866::0::1::::<><>::res://Scripts/coin.gd<>uid://cdn7e230ouk7v::::res://Assets/Coin.png
-crew_sprite.tscn::PackedScene::5742165117576067809::1715810866::0::1::::<><>::uid://cbpu38et7d2pq::::res://Assets/Crew-Sprite-Sheet.png
-Game.tscn::PackedScene::1011544306321746386::1715810866::0::1::::<><>::res://Scripts/GameManager.gd<>uid://dmngx160pmrk8::::res://Player.tscn<>uid://b8f3ouc6ifpmw::::res://Assets/water_texture__8_bit__by_trarian_dezbqgu.png<>res://Scripts/Water.gd<>uid://cn2svdl6q647v::::res://crew_sprite.tscn<>res://Scripts/SpawnerManager.gd<>uid://bmpgbjke786lu::::res://Assets/Sounds/213982__fenrirfangs__coin-clatter-8.wav<>uid://gpgyuvv5kmk8::::res://Assets/Sounds/395824__norman_hittle__spilled-coins.wav<>uid://ba8p7sp8ctx0o::::res://Assets/Sounds/Lovely.mp3<>uid://f6bv6teq1c3w::::res://Assets/Sounds/467883__samsterbirdies__cannon-shot.ogg<>uid://clay7b0jslyh7::::res://Assets/Sounds/Club Seamus (1).mp3
-health_barrel.tscn::PackedScene::3576897221383229724::1715810866::0::1::::<><>::res://Supplies.gd<>uid://cr53toixqtoiu::::res://Assets/Health Barrel.png
+::res://::1715873489
+bomb.tscn::PackedScene::1720685972299474778::1715825080::0::1::::<><>::res://Scripts/bomb.gd<>uid://cbrm211l52gse::::res://Assets/Bomb.png
+coin.tscn::PackedScene::7293525919623263527::1715825080::0::1::::<><>::res://Scripts/coin.gd<>uid://cdn7e230ouk7v::::res://Assets/Coin.png
+crew_sprite.tscn::PackedScene::5742165117576067809::1715825080::0::1::::<><>::uid://cbpu38et7d2pq::::res://Assets/Crew-Sprite-Sheet.png
+Game.tscn::PackedScene::1011544306321746386::1715825080::0::1::::<><>::res://Scripts/GameManager.gd<>uid://dmngx160pmrk8::::res://Player.tscn<>uid://b8f3ouc6ifpmw::::res://Assets/water_texture__8_bit__by_trarian_dezbqgu.png<>res://Scripts/Water.gd<>uid://cn2svdl6q647v::::res://crew_sprite.tscn<>res://Scripts/SpawnerManager.gd<>uid://bmpgbjke786lu::::res://Assets/Sounds/213982__fenrirfangs__coin-clatter-8.wav<>uid://gpgyuvv5kmk8::::res://Assets/Sounds/395824__norman_hittle__spilled-coins.wav<>uid://ba8p7sp8ctx0o::::res://Assets/Sounds/Lovely.mp3<>uid://f6bv6teq1c3w::::res://Assets/Sounds/467883__samsterbirdies__cannon-shot.ogg<>uid://clay7b0jslyh7::::res://Assets/Sounds/Club Seamus (1).mp3
+health_barrel.tscn::PackedScene::3576897221383229724::1715825080::0::1::::<><>::res://Supplies.gd<>uid://cr53toixqtoiu::::res://Assets/Health Barrel.png
 icon.svg::CompressedTexture2D::767188268870214290::1714587527::1714587540::1::::<><>::
-Noble.tscn::PackedScene::7608110000980655734::1715810866::0::1::::<><>::res://Scripts/Noble.gd<>uid://cw72gifbkynbc::::res://Assets/Nobleman.png<>uid://duws26fvp8riy::::res://Assets/Sounds/Unhand me.mp3<>uid://cqmphpwl3ui3c::::res://Assets/Sounds/Noblewoman Scream.wav
-Player.tscn::PackedScene::8028771875407343209::1715810866::0::1::::<><>::uid://bmawpla5v18ga::::res://Assets/Pirate Player.png<>res://Scripts/Player.gd
+Noble.tscn::PackedScene::7608110000980655734::1715825080::0::1::::<><>::res://Scripts/Noble.gd<>uid://cw72gifbkynbc::::res://Assets/Nobleman.png<>uid://duws26fvp8riy::::res://Assets/Sounds/Unhand me.mp3<>uid://cqmphpwl3ui3c::::res://Assets/Sounds/Noblewoman Scream.wav
+Player.tscn::PackedScene::8028771875407343209::1715825080::0::1::::<><>::uid://bmawpla5v18ga::::res://Assets/Pirate Player.png<>res://Scripts/Player.gd
 Supplies.gd::GDScript::-1::1715792700::0::1::::<>Node2D<>::
-treasure_chest.tscn::PackedScene::2223754973989777648::1715810866::0::1::::<><>::res://Scripts/Treasure_Chest.gd<>uid://ndbgmeinolnl::::res://Assets/Chest.png
+treasure_chest.tscn::PackedScene::2223754973989777648::1715825081::0::1::::<><>::res://Scripts/Treasure_Chest.gd<>uid://ndbgmeinolnl::::res://Assets/Chest.png
 ::res://Assets/::1715810649
 Bomb-Sheet.png::CompressedTexture2D::3979269806081357249::1715093208::1715093210::1::::<><>::
 Bomb.png::CompressedTexture2D::4878902859504847512::1715095496::1715095496::1::::<><>::
@@ -33,10 +33,10 @@ Club Seamus (1).mp3::AudioStreamMP3::5546433092212803910::1715803762::1715803768
 Lovely.mp3::AudioStreamMP3::2455514019968712020::1715791291::1715791292::1::::<><>::
 Noblewoman Scream.wav::AudioStreamWAV::5921559476466221466::1715804113::1715804113::1::::<><>::
 Unhand me.mp3::AudioStreamMP3::8609597993657876932::1715804059::1715804059::1::::<><>::
-::res://Scripts/::1715809819
+::res://Scripts/::1715824681
 bomb.gd::GDScript::-1::1715791769::0::1::::<>Node2D<>::
 coin.gd::GDScript::-1::1715091300::0::1::::<>Node2D<>::
-GameManager.gd::GDScript::-1::1715809819::0::1::::<>Node2D<>::
+GameManager.gd::GDScript::-1::1715824681::0::1::::<>Node2D<>::
 Noble.gd::GDScript::-1::1715804597::0::1::::<>Node2D<>::
 Player.gd::GDScript::-1::1715805414::0::1::::<>CharacterBody2D<>::
 PlayerInput.gd::GDScript::-1::1714616947::0::1::::<>CharacterBody2D<>::
