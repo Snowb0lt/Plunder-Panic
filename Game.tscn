@@ -128,13 +128,15 @@ autostart = true
 
 [node name="Coin" type="AudioStreamPlayer2D" parent="Sounds"]
 stream = ExtResource("7_o2b3j")
+volume_db = 3.962
 
 [node name="Chest Spill" type="AudioStreamPlayer2D" parent="Sounds"]
 stream = ExtResource("8_3emui")
+volume_db = 2.971
 
 [node name="Healed" type="AudioStreamPlayer2D" parent="Sounds"]
 stream = ExtResource("8_ql727")
-volume_db = 5.943
+volume_db = 10.895
 
 [node name="Cannon" type="AudioStreamPlayer2D" parent="Sounds"]
 scale = Vector2(0.810682, 1.02449)
