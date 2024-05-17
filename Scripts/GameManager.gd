@@ -2,7 +2,7 @@ extends Node2D
 
 var score = 0
 var scoreLabel
-var lives = 5
+@export var lives = 5
 #check if match is over
 var isMatchOver = false
 
