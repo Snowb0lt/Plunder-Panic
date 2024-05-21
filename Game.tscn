@@ -1,8 +1,9 @@
-[gd_scene load_steps=17 format=3 uid="uid://on88s5s78yx3"]
+[gd_scene load_steps=18 format=3 uid="uid://on88s5s78yx3"]
 
 [ext_resource type="Script" path="res://Scripts/GameManager.gd" id="1_75dx8"]
 [ext_resource type="PackedScene" uid="uid://dmngx160pmrk8" path="res://Player.tscn" id="1_elwaj"]
 [ext_resource type="Texture2D" uid="uid://b8f3ouc6ifpmw" path="res://Assets/water_texture__8_bit__by_trarian_dezbqgu.png" id="2_7fln5"]
+[ext_resource type="Texture2D" uid="uid://gbh6gc8aj4h4" path="res://Assets/Background.png" id="2_chkg2"]
 [ext_resource type="Script" path="res://Scripts/Water.gd" id="3_qtoy8"]
 [ext_resource type="PackedScene" uid="uid://cn2svdl6q647v" path="res://crew_sprite.tscn" id="5_l8cp4"]
 [ext_resource type="Script" path="res://Scripts/SpawnerManager.gd" id="5_vwgxj"]
@@ -29,6 +30,12 @@ size = Vector2(37, 774.5)
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_75dx8")
+
+[node name="Background" type="Sprite2D" parent="."]
+visibility_layer = 2
+position = Vector2(577.607, 321.75)
+scale = Vector2(3.63371, 3.55833)
+texture = ExtResource("2_chkg2")
 
 [node name="Player" parent="." instance=ExtResource("1_elwaj")]
 position = Vector2(365, 450)
@@ -83,13 +90,19 @@ vertical_alignment = 1
 
 [node name="GameOverUI" type="Node2D" parent="UI"]
 visible = false
-position = Vector2(501, 72)
+position = Vector2(468, 72)
+
+[node name="Panel" type="Panel" parent="UI/GameOverUI"]
+offset_left = -265.0
+offset_top = 1.0
+offset_right = 464.0
+offset_bottom = 410.0
 
 [node name="Game Over" type="Label" parent="UI/GameOverUI"]
-offset_left = -99.0
-offset_top = -13.0
-offset_right = 116.0
-offset_bottom = 60.0
+offset_left = -20.0
+offset_top = 4.0
+offset_right = 195.0
+offset_bottom = 59.0
 theme_override_font_sizes/font_size = 40
 text = "Game Over"
 horizontal_alignment = 1
@@ -100,33 +113,40 @@ offset_left = -254.0
 offset_top = 81.0
 offset_right = 440.0
 offset_bottom = 310.0
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 35
 text = "Total Score in Loot: 
 Total Chests Plundered:
 Members of the Nobility Kidnapped:
 Supplies Transfered:"
+horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Restart" type="Button" parent="UI/GameOverUI"]
-offset_left = -185.0
-offset_top = 332.0
-offset_right = -7.0
-offset_bottom = 376.0
+offset_left = -143.0
+offset_top = 331.0
+offset_right = 35.0
+offset_bottom = 378.0
 theme_override_font_sizes/font_size = 28
 text = "Restart"
 
 [node name="Menu" type="Button" parent="UI/GameOverUI"]
-offset_left = 104.0
-offset_top = 332.0
-offset_right = 282.0
-offset_bottom = 376.0
+offset_left = 146.0
+offset_top = 331.0
+offset_right = 324.0
+offset_bottom = 378.0
 theme_override_font_sizes/font_size = 28
 text = "Menu"
+
+[node name="Panel" type="Panel" parent="UI"]
+offset_left = 47.0
+offset_top = 8.0
+offset_right = 204.0
+offset_bottom = 83.0
 
 [node name="Crew Container" type="HBoxContainer" parent="UI"]
 offset_left = 51.0
 offset_top = 13.0
-offset_right = 285.0
+offset_right = 206.0
 offset_bottom = 81.0
 theme_override_constants/separation = 30
 

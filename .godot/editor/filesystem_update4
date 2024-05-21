@@ -1,7 +1,5 @@
-res://Scripts/GameManager.gd
-res://MenuScript.gd
-res://main_menu.tscn
 res://Game.tscn
+res://Scripts/GameManager.gd
 res://Player.tscn
 res://coin.tscn
 res://bomb.tscn
@@ -9,3 +7,4 @@ res://crew_sprite.tscn
 res://health_barrel.tscn
 res://Noble.tscn
 res://treasure_chest.tscn
+res://main_menu.tscn

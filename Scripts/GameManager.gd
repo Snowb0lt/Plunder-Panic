@@ -13,7 +13,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if(Input.is_action_just_pressed("muteMusic")) :
+		muteMusic()
 
 func updateScore():
 	scoreLabel.text = "Score: " + str(score)
@@ -77,3 +78,12 @@ func _on_restart_pressed():
 
 func _on_menu_pressed():
 	get_tree().change_scene_to_file("res://main_menu.tscn")
+
+@onready var gameMusic = get_node("Sounds/BackgroundMusic")
+@onready var isMusicPlaying = true
+func muteMusic():
+	isMusicPlaying = !isMusicPlaying
+	if (!isMusicPlaying):
+		gameMusic.stop()
+	else:
+		gameMusic.play()
