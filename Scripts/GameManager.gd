@@ -19,6 +19,10 @@ func _process(delta):
 func updateScore():
 	scoreLabel.text = "Score: " + str(score)
 
+#counts how many of each item collected for final scoring
+var NoblesTaken = 0
+var ChestsTaken = 0
+var SuppliesGiven = 0
 #Handles the walls and collection of treasure and supplies
 func _on_score_area_treasure_body_entered(body):
 #If it's a coin
@@ -29,9 +33,11 @@ func _on_score_area_treasure_body_entered(body):
 		if body.is_in_group("Chest"):
 			score += 500
 			$"Sounds/Chest Spill".play()
+			ChestsTaken += 1
 
 		if body.is_in_group("Nobility"):
 			score += 1000
+			NoblesTaken += 1
 
 
 		updateScore()
@@ -40,6 +46,7 @@ func _on_score_area_treasure_body_entered(body):
 func _on_score_area_supplies_body_entered(body):
 	if body.is_in_group("Supplies"):
 		$Sounds/Healed.play()
+		SuppliesGiven += 1
 		body.queue_free()
 
 #Checks to see how many crew are remaining
@@ -70,7 +77,7 @@ func StopGame():
 @onready var stats = get_node("UI/GameOverUI/Stats")
 func LoadStats():
 	gameOverUI.visible = true
-	stats.text = "Total Score in Loot: " + str(score) + "\nTotal Chests Plundered: " + "\nMembers of the Nobility Kidnapped: " + "\nSupplies Transfered: "
+	stats.text = "Total Score in Loot: " + str(score) + "\nTotal Chests Plundered: " + str(ChestsTaken) + "\nMembers of the Nobility Kidnapped: " + str(NoblesTaken) + "\nSupplies Transfered: " + str(SuppliesGiven)
 
 #Menu Functions
 func _on_restart_pressed():

@@ -8,7 +8,7 @@ radius = 6.0
 height = 14.0
 
 [node name="Coin" type="Node2D"]
-scale = Vector2(1.5, 1.5)
+scale = Vector2(-2.65955, -2.65955)
 script = ExtResource("1_6uhkq")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="." groups=["Coin", "Treasure"]]
