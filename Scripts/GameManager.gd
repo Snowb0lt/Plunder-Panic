@@ -63,6 +63,17 @@ func StopGame():
 	print("The Game Is Over")
 	$Spawners.StopTimers()
 	isMatchOver = true
+	LoadStats()
 
+@onready var gameOverUI = get_node("UI/GameOverUI")
+@onready var stats = get_node("UI/GameOverUI/Stats")
+func LoadStats():
+	gameOverUI.visible = true
+	stats.text = "Total Score in Loot: " + str(score) + "\nTotal Chests Plundered: " + "\nMembers of the Nobility Kidnapped: " + "\nSupplies Transfered: "
 
+#Menu Functions
+func _on_restart_pressed():
+	get_tree().change_scene_to_file("res://Game.tscn")
 
+func _on_menu_pressed():
+	get_tree().change_scene_to_file("res://main_menu.tscn")
