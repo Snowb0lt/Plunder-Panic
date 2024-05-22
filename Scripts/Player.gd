@@ -46,6 +46,7 @@ func _on_catch_area_body_entered(body):
 	if body.is_in_group("Bomb"):
 		#end the run
 		body.queue_free()
+		$"../Sounds/Explosion".play()
 		$Sprite2D.texture = ResourceLoader.load("res://Assets/Pirate Player Exploded.png")
 		body.queue_free
 		$"..".StopGame()
