@@ -1,6 +1,5 @@
 res://Game.tscn
 res://Scripts/GameManager.gd
-res://Scripts/Player.gd
 res://Player.tscn
 res://coin.tscn
 res://bomb.tscn
