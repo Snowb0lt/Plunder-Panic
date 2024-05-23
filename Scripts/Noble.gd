@@ -25,7 +25,7 @@ func pickSprite():
 	$RigidBody2D/MainSprite.texture = nobleArray.pick_random()
 
 func scream_out():
-	if ($RigidBody2D/MainSprite.texture == load("res://Assets/Nobleman.png")):
+	if ($RigidBody2D/MainSprite.texture == load("res://Assets/Nobleman-final.png")):
 		$ScreamMale.play()
-	if ($RigidBody2D/MainSprite.texture == load("res://Assets/Noblelady.png")):
+	if ($RigidBody2D/MainSprite.texture == load("res://Assets/Noblelady-final.png")):
 		$ScreamFemale.play()
