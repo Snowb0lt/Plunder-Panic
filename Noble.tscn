@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dgnopv7a4f3h7"]
 
 [ext_resource type="Script" path="res://Scripts/Noble.gd" id="1_tldpk"]
-[ext_resource type="Texture2D" uid="uid://cw72gifbkynbc" path="res://Assets/Nobleman.png" id="2_0xo2u"]
+[ext_resource type="Texture2D" uid="uid://w4gaov4d2sg8" path="res://Assets/Nobleman-final.png" id="2_wb5vg"]
 [ext_resource type="AudioStream" uid="uid://duws26fvp8riy" path="res://Assets/Sounds/Unhand me.mp3" id="3_k2i1t"]
 [ext_resource type="AudioStream" uid="uid://cqmphpwl3ui3c" path="res://Assets/Sounds/Noblewoman Scream.wav" id="4_u3ajd"]
 
@@ -17,8 +17,7 @@ script = ExtResource("1_tldpk")
 collision_mask = 16
 
 [node name="MainSprite" type="Sprite2D" parent="RigidBody2D"]
-scale = Vector2(4, 4)
-texture = ExtResource("2_0xo2u")
+texture = ExtResource("2_wb5vg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 shape = SubResource("CapsuleShape2D_yumn0")

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bq7w8expe5n2c"]
 
 [ext_resource type="Script" path="res://Supplies.gd" id="1_105hj"]
-[ext_resource type="Texture2D" uid="uid://cr53toixqtoiu" path="res://Assets/Health Barrel.png" id="2_ab5c4"]
+[ext_resource type="Texture2D" uid="uid://qfvu18h7opva" path="res://Assets/Health Barrel-final.png" id="2_0omjp"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cvgf8"]
 radius = 25.0
@@ -15,7 +15,7 @@ script = ExtResource("1_105hj")
 collision_mask = 8
 
 [node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
-texture = ExtResource("2_ab5c4")
+texture = ExtResource("2_0omjp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 shape = SubResource("CapsuleShape2D_cvgf8")

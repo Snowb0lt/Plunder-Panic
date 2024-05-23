@@ -8,3 +8,5 @@ res://health_barrel.tscn
 res://Noble.tscn
 res://treasure_chest.tscn
 res://main_menu.tscn
+res://MenuScript.gd
+res://Scripts/Noble.gd

@@ -21,7 +21,7 @@ func launch_object():
 	body.apply_torque(100000)
 
 func pickSprite():
-	var nobleArray = [load("res://Assets/Nobleman.png"), load("res://Assets/Noblelady.png")]
+	var nobleArray = [load("res://Assets/Nobleman-final.png"), load("res://Assets/Noblelady-final.png")]
 	$RigidBody2D/MainSprite.texture = nobleArray.pick_random()
 
 func scream_out():

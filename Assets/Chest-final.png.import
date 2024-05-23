@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cr53toixqtoiu"
-path="res://.godot/imported/Health Barrel.png-3e70891ebbee7125786177fa3acfc09e.ctex"
+uid="uid://dbw77glbpdmtm"
+path="res://.godot/imported/Chest-final.png-167d95b3b04d2dfa760ffda282cbda69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Health Barrel.png"
-dest_files=["res://.godot/imported/Health Barrel.png-3e70891ebbee7125786177fa3acfc09e.ctex"]
+source_file="res://Assets/Chest-final.png"
+dest_files=["res://.godot/imported/Chest-final.png-167d95b3b04d2dfa760ffda282cbda69.ctex"]
 
 [params]
 

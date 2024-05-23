@@ -1,12 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://bokmjpw52n4vc"]
+[gd_scene load_steps=10 format=3 uid="uid://bokmjpw52n4vc"]
 
 [ext_resource type="Script" path="res://MenuScript.gd" id="1_drjea"]
 [ext_resource type="AudioStream" uid="uid://3duwvp42f78l" path="res://Assets/Sounds/queen-annex27s-revenge-pirate-shanty-piano-solo-blackbeard-194624.mp3" id="2_x5yd1"]
+[ext_resource type="Texture2D" uid="uid://dvclgh1jy8xbx" path="res://Assets/Coin-Final.png" id="3_f6oqf"]
+[ext_resource type="Texture2D" uid="uid://dbw77glbpdmtm" path="res://Assets/Chest-final.png" id="4_vkw4p"]
+[ext_resource type="Texture2D" uid="uid://w4gaov4d2sg8" path="res://Assets/Nobleman-final.png" id="5_pugmy"]
+[ext_resource type="Texture2D" uid="uid://6t3l0vi3xsf1" path="res://Assets/Noblelady-final.png" id="6_ytnxu"]
+[ext_resource type="Texture2D" uid="uid://qfvu18h7opva" path="res://Assets/Health Barrel-final.png" id="7_t75qo"]
+[ext_resource type="Texture2D" uid="uid://c3rf0auufwbcd" path="res://Assets/crew dead display.png" id="8_h5a28"]
+[ext_resource type="Texture2D" uid="uid://bonf8g0eshpal" path="res://Assets/Bomb-final.png" id="9_jvwwl"]
 
 [node name="Main Menu" type="Node2D"]
 script = ExtResource("1_drjea")
 
-[node name="Label" type="Label" parent="."]
+[node name="Menu Options" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="Menu Options"]
 offset_left = 274.0
 offset_top = 1.0
 offset_right = 869.0
@@ -16,31 +25,40 @@ text = "Plunder Panic"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Start" type="Button" parent="."]
+[node name="Start" type="Button" parent="Menu Options"]
 offset_left = 453.0
 offset_top = 403.0
 offset_right = 695.0
-offset_bottom = 464.0
+offset_bottom = 466.0
 theme_override_font_sizes/font_size = 40
 text = "Play"
 
-[node name="Quit" type="Button" parent="."]
+[node name="Quit" type="Button" parent="Menu Options"]
 offset_left = 453.0
-offset_top = 478.0
+offset_top = 540.0
 offset_right = 695.0
-offset_bottom = 539.0
+offset_bottom = 603.0
 theme_override_font_sizes/font_size = 40
 text = "Quit
 "
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Information" type="Button" parent="Menu Options"]
+offset_left = 453.0
+offset_top = 472.0
+offset_right = 695.0
+offset_bottom = 535.0
+theme_override_font_sizes/font_size = 40
+text = "How To Play
+"
+
+[node name="Panel" type="Panel" parent="Menu Options"]
 offset_left = 815.0
 offset_top = 521.0
 offset_right = 855.0
 offset_bottom = 549.0
 scale = Vector2(8.11341, 4.09321)
 
-[node name="Credits" type="Label" parent="."]
+[node name="Credits" type="Label" parent="Menu Options"]
 offset_left = 815.0
 offset_top = 521.0
 offset_right = 1139.0
@@ -59,5 +77,85 @@ vertical_alignment = 1
 stream = ExtResource("2_x5yd1")
 autoplay = true
 
-[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[node name="Instructions" type="Panel" parent="."]
+visible = false
+offset_left = 29.0
+offset_top = 21.0
+offset_right = 1115.0
+offset_bottom = 628.0
+
+[node name="Instruction Text" type="Label" parent="Instructions"]
+offset_left = -1.0
+offset_top = 63.0
+offset_right = 1085.0
+offset_bottom = 610.0
+theme_override_font_sizes/font_size = 16
+text = "Serving the Pirate Queen Lockley, Smitters was assigned to the lowly job of plunder bouncer. He must catch and bounce the plunder goods from the neighbouring ship onto his captain's ship as well as make sure the pirates aboard can keep fighting.
+
+Occasionally, loot will be thrown overboard. Standing beneath them will cause them to bounce towards the right. Get them to the other side and the loot will be added to the total loot! Loot may include: Coins, Chests, Members of the Nobility
+
+
+
+Also, the Pirate Queen will send supplies over to the other ship to ensure that her brave plunderers can keep fighting on. These are in the form of barrels with medical supplies. Don't drop them, otherwise crewmates will get injured and have to flee the fight!
+
+
+
+Be wary, though. The Spanish will not stand to let their treasures be taken! They will fire out bombs to destroy Smitter's rowboat. Let those hit the water, as the fuses will be put out that way! 
+If Smitter's rowboat gets destroyed, or if too many pirate lives are lost, the Pirate Queen will cut her losses and escape. Grab as much treasure as possible!"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="Instructions"]
+layout_mode = 0
+offset_left = 1027.0
+offset_top = 2.0
+offset_right = 1083.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 39
+text = "X"
+
+[node name="Treasures" type="Node2D" parent="Instructions"]
+
+[node name="Coin" type="Sprite2D" parent="Instructions/Treasures"]
+position = Vector2(355, 233)
+scale = Vector2(0.6875, 0.6875)
+texture = ExtResource("3_f6oqf")
+
+[node name="Chest" type="Sprite2D" parent="Instructions/Treasures"]
+position = Vector2(446, 234)
+scale = Vector2(0.6875, 0.6875)
+texture = ExtResource("4_vkw4p")
+
+[node name="Nobleman" type="Sprite2D" parent="Instructions/Treasures"]
+position = Vector2(530, 234)
+scale = Vector2(0.6875, 0.6875)
+texture = ExtResource("5_pugmy")
+
+[node name="Noblewoman" type="Sprite2D" parent="Instructions/Treasures"]
+position = Vector2(614, 234)
+scale = Vector2(0.6875, 0.6875)
+texture = ExtResource("6_ytnxu")
+
+[node name="Supplies" type="Node2D" parent="Instructions"]
+
+[node name="Barrel" type="Sprite2D" parent="Instructions/Supplies"]
+position = Vector2(520, 360)
+scale = Vector2(0.895, 0.895)
+texture = ExtResource("7_t75qo")
+
+[node name="Hazards" type="Node2D" parent="Instructions"]
+
+[node name="Dead" type="Sprite2D" parent="Instructions/Hazards"]
+position = Vector2(461, 543)
+texture = ExtResource("8_h5a28")
+
+[node name="Bomb" type="Sprite2D" parent="Instructions/Hazards"]
+position = Vector2(594, 543)
+texture = ExtResource("9_jvwwl")
+flip_h = true
+
+[connection signal="pressed" from="Menu Options/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Menu Options/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Menu Options/Information" to="." method="_on_information_pressed"]
+[connection signal="pressed" from="Instructions/Button" to="." method="_on_button_pressed"]

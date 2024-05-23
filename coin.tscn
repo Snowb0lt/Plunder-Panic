@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://db6bkoc1ak46f"]
 
 [ext_resource type="Script" path="res://Scripts/coin.gd" id="1_6uhkq"]
-[ext_resource type="Texture2D" uid="uid://bqb44l5rltmw4" path="res://Assets/Coin.png" id="1_qxykj"]
+[ext_resource type="Texture2D" uid="uid://dvclgh1jy8xbx" path="res://Assets/Coin-Final.png" id="2_g1kky"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2n4ie"]
 radius = 6.0
@@ -16,7 +16,8 @@ collision_mask = 2
 constant_force = Vector2(0, -0.95)
 
 [node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
-texture = ExtResource("1_qxykj")
+scale = Vector2(0.237315, 0.237315)
+texture = ExtResource("2_g1kky")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 shape = SubResource("CapsuleShape2D_2n4ie")

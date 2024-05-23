@@ -1,9 +1,9 @@
-AudioStreamPlayer2D
-Panel
-Label
-Button
-Node2D
 Sprite2D
+Node2D
+Button
+Label
+Panel
+AudioStreamPlayer2D
 CollisionShape2D
 RigidBody2D
 Timer

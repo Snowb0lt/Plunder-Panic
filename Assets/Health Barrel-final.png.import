@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqb44l5rltmw4"
-path="res://.godot/imported/Coin.png-6144d022cc35aedfb7de59542062cb6a.ctex"
+uid="uid://qfvu18h7opva"
+path="res://.godot/imported/Health Barrel-final.png-3c9dd7bb07864cd9a76b8cf93b9cf5ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Coin.png"
-dest_files=["res://.godot/imported/Coin.png-6144d022cc35aedfb7de59542062cb6a.ctex"]
+source_file="res://Assets/Health Barrel-final.png"
+dest_files=["res://.godot/imported/Health Barrel-final.png-3c9dd7bb07864cd9a76b8cf93b9cf5ba.ctex"]
 
 [params]
 

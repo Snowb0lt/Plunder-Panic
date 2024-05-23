@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddmiqpkuw56cx"
-path="res://.godot/imported/Noblelady.png-326e150a6c0937cf59b5cc9ab92f6805.ctex"
+uid="uid://bonf8g0eshpal"
+path="res://.godot/imported/Bomb-final.png-49bbb0ac05ae5fd7cc216fef70dc2e54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Noblelady.png"
-dest_files=["res://.godot/imported/Noblelady.png-326e150a6c0937cf59b5cc9ab92f6805.ctex"]
+source_file="res://Assets/Bomb-final.png"
+dest_files=["res://.godot/imported/Bomb-final.png-49bbb0ac05ae5fd7cc216fef70dc2e54.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cw72gifbkynbc"
-path="res://.godot/imported/Nobleman.png-9af0b34df94a018e7a606c39e5934251.ctex"
+uid="uid://c3rf0auufwbcd"
+path="res://.godot/imported/crew dead display.png-d243d69bd5f6560796e2372bb1755840.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Nobleman.png"
-dest_files=["res://.godot/imported/Nobleman.png-9af0b34df94a018e7a606c39e5934251.ctex"]
+source_file="res://Assets/crew dead display.png"
+dest_files=["res://.godot/imported/crew dead display.png-d243d69bd5f6560796e2372bb1755840.ctex"]
 
 [params]
 

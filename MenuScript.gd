@@ -16,3 +16,13 @@ func _on_start_pressed():
 
 func _on_quit_pressed():
 	get_tree().quit()
+
+
+func _on_information_pressed():
+	get_node("Instructions").visible = true
+	get_node("Menu Options").visible = false
+
+
+func _on_button_pressed():
+	get_node("Instructions").visible = false
+	get_node("Menu Options").visible = true
