@@ -11,9 +11,17 @@ config_version=5
 [application]
 
 config/name="Plunder Panic"
+config/version="Alpha 1.0"
 run/main_scene="res://main_menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Assets/Crew Sprite Edit.png"
+
+[display]
+
+window/size/mode=3
+window/size/borderless=true
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
 
 [input]
 

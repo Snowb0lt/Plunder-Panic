@@ -1,18 +1,19 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1716496923
-bomb.tscn::PackedScene::1720685972299474778::1716495759::0::1::::<><>::res://Scripts/bomb.gd<>uid://cbrm211l52gse::::res://Assets/Bomb.png
-coin.tscn::PackedScene::7293525919623263527::1716496379::0::1::::<><>::res://Scripts/coin.gd<>uid://dvclgh1jy8xbx::::res://Assets/Coin-Final.png
-crew_sprite.tscn::PackedScene::5742165117576067809::1716495759::0::1::::<><>::uid://cbpu38et7d2pq::::res://Assets/Crew-Sprite-Sheet.png
-Game.tscn::PackedScene::1011544306321746386::1716495759::0::1::::<><>::res://Scripts/GameManager.gd<>uid://dmngx160pmrk8::::res://Player.tscn<>uid://b8f3ouc6ifpmw::::res://Assets/water_texture__8_bit__by_trarian_dezbqgu.png<>uid://gbh6gc8aj4h4::::res://Assets/Background.png<>res://Scripts/Water.gd<>uid://cn2svdl6q647v::::res://crew_sprite.tscn<>res://Scripts/SpawnerManager.gd<>uid://bmpgbjke786lu::::res://Assets/Sounds/213982__fenrirfangs__coin-clatter-8.wav<>uid://gpgyuvv5kmk8::::res://Assets/Sounds/395824__norman_hittle__spilled-coins.wav<>uid://ba8p7sp8ctx0o::::res://Assets/Sounds/Lovely.mp3<>uid://f6bv6teq1c3w::::res://Assets/Sounds/467883__samsterbirdies__cannon-shot.ogg<>uid://clay7b0jslyh7::::res://Assets/Sounds/Club Seamus (1).mp3<>uid://csyrqnu5njv3h::::res://Assets/Sounds/523089__magnuswaker__explosion-1.wav
-health_barrel.tscn::PackedScene::3576897221383229724::1716496921::0::1::::<><>::res://Supplies.gd<>uid://qfvu18h7opva::::res://Assets/Health Barrel-final.png
+::res://::1716833560
+bomb.tscn::PackedScene::1720685972299474778::1716830846::0::1::::<><>::res://Scripts/bomb.gd<>uid://cbrm211l52gse::::res://Assets/Bomb.png
+coin.tscn::PackedScene::7293525919623263527::1716830846::0::1::::<><>::res://Scripts/coin.gd<>uid://dvclgh1jy8xbx::::res://Assets/Coin-Final.png
+crew_sprite.tscn::PackedScene::5742165117576067809::1716830846::0::1::::<><>::uid://cbpu38et7d2pq::::res://Assets/Crew-Sprite-Sheet.png
+export_presets.cfg::TextFile::-1::1716819289::0::1::::<><>::
+Game.tscn::PackedScene::1011544306321746386::1716830845::0::1::::<><>::res://Scripts/GameManager.gd<>uid://dmngx160pmrk8::::res://Player.tscn<>uid://b8f3ouc6ifpmw::::res://Assets/water_texture__8_bit__by_trarian_dezbqgu.png<>uid://gbh6gc8aj4h4::::res://Assets/Background.png<>res://Scripts/Water.gd<>uid://cn2svdl6q647v::::res://crew_sprite.tscn<>res://Scripts/SpawnerManager.gd<>uid://bmpgbjke786lu::::res://Assets/Sounds/213982__fenrirfangs__coin-clatter-8.wav<>uid://gpgyuvv5kmk8::::res://Assets/Sounds/395824__norman_hittle__spilled-coins.wav<>uid://ba8p7sp8ctx0o::::res://Assets/Sounds/Lovely.mp3<>uid://f6bv6teq1c3w::::res://Assets/Sounds/467883__samsterbirdies__cannon-shot.ogg<>uid://clay7b0jslyh7::::res://Assets/Sounds/Club Seamus (1).mp3<>uid://csyrqnu5njv3h::::res://Assets/Sounds/523089__magnuswaker__explosion-1.wav
+health_barrel.tscn::PackedScene::3576897221383229724::1716830846::0::1::::<><>::res://Supplies.gd<>uid://qfvu18h7opva::::res://Assets/Health Barrel-final.png
 icon.svg::CompressedTexture2D::767188268870214290::1714587527::1714587540::1::::<><>::
-main_menu.tscn::PackedScene::3390453771460132120::1716496923::0::1::::<><>::res://MenuScript.gd<>uid://3duwvp42f78l::::res://Assets/Sounds/queen-annex27s-revenge-pirate-shanty-piano-solo-blackbeard-194624.mp3<>uid://dvclgh1jy8xbx::::res://Assets/Coin-Final.png<>uid://dbw77glbpdmtm::::res://Assets/Chest-final.png<>uid://w4gaov4d2sg8::::res://Assets/Nobleman-final.png<>uid://6t3l0vi3xsf1::::res://Assets/Noblelady-final.png
+main_menu.tscn::PackedScene::3390453771460132120::1716830846::0::1::::<><>::res://MenuScript.gd<>uid://3duwvp42f78l::::res://Assets/Sounds/queen-annex27s-revenge-pirate-shanty-piano-solo-blackbeard-194624.mp3<>uid://dvclgh1jy8xbx::::res://Assets/Coin-Final.png<>uid://dbw77glbpdmtm::::res://Assets/Chest-final.png<>uid://w4gaov4d2sg8::::res://Assets/Nobleman-final.png<>uid://6t3l0vi3xsf1::::res://Assets/Noblelady-final.png<>uid://qfvu18h7opva::::res://Assets/Health Barrel-final.png<>uid://c3rf0auufwbcd::::res://Assets/crew dead display.png<>uid://bonf8g0eshpal::::res://Assets/Bomb-final.png
 MenuScript.gd::GDScript::-1::1716495517::0::1::::<>Node2D<>::
-Noble.tscn::PackedScene::7608110000980655734::1716496582::0::1::::<><>::res://Scripts/Noble.gd<>uid://w4gaov4d2sg8::::res://Assets/Nobleman-final.png<>uid://duws26fvp8riy::::res://Assets/Sounds/Unhand me.mp3<>uid://cqmphpwl3ui3c::::res://Assets/Sounds/Noblewoman Scream.wav
-Player.tscn::PackedScene::8028771875407343209::1716495759::0::1::::<><>::uid://bmawpla5v18ga::::res://Assets/Pirate Player.png<>res://Scripts/Player.gd
+Noble.tscn::PackedScene::7608110000980655734::1716830846::0::1::::<><>::res://Scripts/Noble.gd<>uid://w4gaov4d2sg8::::res://Assets/Nobleman-final.png<>uid://duws26fvp8riy::::res://Assets/Sounds/Unhand me.mp3<>uid://cqmphpwl3ui3c::::res://Assets/Sounds/Noblewoman Scream.wav
+Player.tscn::PackedScene::8028771875407343209::1716830845::0::1::::<><>::uid://bmawpla5v18ga::::res://Assets/Pirate Player.png<>res://Scripts/Player.gd
 Supplies.gd::GDScript::-1::1715792700::0::1::::<>Node2D<>::
-treasure_chest.tscn::PackedScene::2223754973989777648::1716496467::0::1::::<><>::res://Scripts/Treasure_Chest.gd<>uid://dbw77glbpdmtm::::res://Assets/Chest-final.png
-::res://Assets/::1716497013
+treasure_chest.tscn::PackedScene::2223754973989777648::1716830846::0::1::::<><>::res://Scripts/Treasure_Chest.gd<>uid://dbw77glbpdmtm::::res://Assets/Chest-final.png
+::res://Assets/::1716833587
 Background.png::CompressedTexture2D::423678137872137319::1716325166::1716325167::1::::<><>::
 Bomb-final.png::CompressedTexture2D::3396264275557324895::1716497013::1716497013::1::::<><>::
 Bomb-Sheet.png::CompressedTexture2D::3979269806081357249::1715093208::1715093210::1::::<><>::
@@ -29,6 +30,7 @@ Noblelady-final.png::CompressedTexture2D::2216798395563026628::1716496538::17164
 Nobleman-final.png::CompressedTexture2D::1604386585951558045::1716496536::1716496536::1::::<><>::
 Pirate Player Exploded.png::CompressedTexture2D::2722567674037848012::1715810643::1715810649::1::::<><>::
 Pirate Player.png::CompressedTexture2D::3230049947247962928::1715810643::1715810649::1::::<><>::
+Splash Screen.png::CompressedTexture2D::1553264378554403750::1716833587::1716833588::1::::<><>::
 water_texture__8_bit__by_trarian_dezbqgu.png::CompressedTexture2D::4714700544406612978::1714654253::1714654256::1::::<><>::
 ::res://Assets/Sounds/::1716337986
 213982__fenrirfangs__coin-clatter-8.wav::AudioStreamWAV::3260019049794923150::1715791017::1715791017::1::::<><>::
@@ -40,11 +42,12 @@ Lovely.mp3::AudioStreamMP3::2455514019968712020::1715791291::1715791292::1::::<>
 Noblewoman Scream.wav::AudioStreamWAV::5921559476466221466::1715804113::1715804113::1::::<><>::
 queen-annex27s-revenge-pirate-shanty-piano-solo-blackbeard-194624.mp3::AudioStreamMP3::1972735509964685349::1716334191::1716334192::1::::<><>::
 Unhand me.mp3::AudioStreamMP3::8609597993657876932::1715804059::1715804059::1::::<><>::
-::res://Scripts/::1716496582
+::res://Builds/::1716819289
+::res://Scripts/::1716829562
 bomb.gd::GDScript::-1::1715791769::0::1::::<>Node2D<>::
 coin.gd::GDScript::-1::1715091300::0::1::::<>Node2D<>::
-GameManager.gd::GDScript::-1::1716476128::0::1::::<>Node2D<>::
-Noble.gd::GDScript::-1::1716496582::0::1::::<>Node2D<>::
+GameManager.gd::GDScript::-1::1716829562::0::1::::<>Node2D<>::
+Noble.gd::GDScript::-1::1716497612::0::1::::<>Node2D<>::
 Player.gd::GDScript::-1::1716338090::0::1::::<>CharacterBody2D<>::
 PlayerInput.gd::GDScript::-1::1714616947::0::1::::<>CharacterBody2D<>::
 SpawnerManager.gd::GDScript::-1::1715805212::0::1::::<>Node2D<>::
