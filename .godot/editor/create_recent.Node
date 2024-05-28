@@ -1,10 +1,10 @@
+Button
 Sprite2D
 Label
 Panel
 HBoxContainer
 CanvasLayer
 Node2D
-Button
 AudioStreamPlayer2D
 CollisionShape2D
 RigidBody2D
