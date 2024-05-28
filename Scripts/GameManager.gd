@@ -77,7 +77,7 @@ func StopGame():
 @onready var stats = get_node("UI/GameOverUI/Stats")
 func LoadStats():
 	gameOverUI.visible = true
-	stats.text = "Total Score in Loot: " + str(score) + "\nTotal Chests Plundered: " + str(ChestsTaken) + "\nMembers of the Nobility Kidnapped: " + str(NoblesTaken) + "\nSupplies Transfered: " + str(SuppliesGiven)
+	stats.text = "Total Score in Loot: " + str(score) + "\nTotal Chests Plundered: " + str(ChestsTaken) + "\nMembers of the Nobility Kidnapped: " + str(NoblesTaken) + "\nSupplies Transferred: " + str(SuppliesGiven)
 
 #Menu Functions
 func _on_restart_pressed():
