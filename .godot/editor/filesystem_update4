@@ -1,11 +1,2 @@
-res://MenuScript.gd
-res://main_menu.tscn
-res://Scripts/GameManager.gd
 res://Game.tscn
-res://Player.tscn
-res://coin.tscn
-res://bomb.tscn
-res://crew_sprite.tscn
-res://health_barrel.tscn
-res://Noble.tscn
-res://treasure_chest.tscn
+res://Scripts/GameManager.gd
